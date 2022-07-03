@@ -27,8 +27,8 @@ function addItem(e) {
     element.setAttributeNode(attr);
     element.innerHTML = `<div class="d-flex mb-3">
                             <p class='title flex-grow-1 pt-1'>${value}</p>
-                            <button class='btn btn-outline-secondary' type='button' id='editBtn'>Edit</button>
-                            <button class='btn btn-outline-secondary' type='button' id='removeBtn'>Remove</button>
+                            <i class='fas fa-edit mt-2' id='editBtn'></i>
+                            <i class='fas fa-trash-alt mt-2 mx-2' id='removeBtn'></i>
                           </div>`
     
     list.appendChild(element);
@@ -61,7 +61,7 @@ function displayAlert(text, action) {
   setTimeout(function removeAlert() {
     alert.textContent = '';
     alert.classList.remove(`alert-${action}`);
-  }, 1000);
+  }, 2000);
 }
 
 function backToDefault() {

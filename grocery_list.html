@@ -4,29 +4,30 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Grocery List</title>
     <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' crossorigin='anonymous' integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' data-turbolinks-track='true'>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous'>
   </head>
   <body>
-    <section class='my-grocery position-absolute top-50 start-50 translate-middle border py-2 px-5'>
-      <form class=grocery-form>
-        <p class='alert'></p>
+    <section class='my-grocery border py-2 px-5 mx-5 mt-5'>
+      <form class='grocery-form mx-5'>
+        <p class='alert my-3'></p>
         <h5>My Grocery List</h5>
         <div class='input-group'>
-          <input type='text' id='grocery' placeholder='e.g milk'>
-          <button class='btn btn-outline-secondary' type='submit' id='addBtn'>Add</button>
+          <input type='text' id='grocery' class='form-control' placeholder='e.g milk'>
+          <button class='btn btn-warning' type='submit' id='addBtn'>Add</button>
         </div>
       </form>
-      <div class='grocery-container'>
+      <div class='grocery-container m-5'>
         <div class='grocery-list'>
           <!-- <article class='grocery-item'>
-            <div class="d-flex flex-row mb-3">
+            <div class='d-flex flex-row mb-3'>
               <p class='title mx-5 pt-1'>Item</p>
-              <button class='btn btn-outline-secondary' type='button' id='editBtn'>Edit</button>
-              <button class='btn btn-outline-secondary' type='button' id='removeBtn'>Remove</button>
+              <i class='fas fa-edit mt-2' id='editBtn'></i>
+              <i class='fas fa-trash-alt mt-2 mx-2' id='removeBtn'></i>
             </div>
           </article> -->
         </div>
-        <button class='btn btn-outline-secondary mb-5 d-none' type='button' id='clearBtn'>Clear</button>
+        <button class='btn btn-outline-secondary d-grid gap-2 col-6 mx-auto mb-5 d-none' type='button' id='clearBtn'>Clear all</button>
       </div>
     </section>
     <script src='groceryList.js'></script>
